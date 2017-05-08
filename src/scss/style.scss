@@ -1,0 +1,19 @@
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+
+/*mobile portrait ansd landscsape*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	@import "mobile";
+}
+
+/*tablet portrait */
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	@import "tablet";
+}
+
+/*desktop and tablet portrait*/
+@media screen and (min-width: 1024px) {
+	@import "desctop";
+}

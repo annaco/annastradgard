@@ -1,0 +1,203 @@
+.navbar  {
+	display: inline;
+	background-color:#fff;
+	font-family:Verdana;
+	padding:15px;
+}
+
+.navbar a  {
+	background-color:#fff;
+	color:#000;
+	padding:0.2em;
+	text-decoration:none;
+}
+
+.navbar a:hover {
+	
+	padding:0.5em 0.2em 0.5em 0.2em;
+}
+
+header  {
+	position: relative;
+	border: 3px solid #aff66e;
+
+	.title  {
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.logga {
+
+		img  {
+		width: 40px;
+		height: 50px;
+		border: 3px solid black;
+		}
+	}
+}
+
+
+.loginForm  {
+	top: 15px;
+	right: 5px;	
+}
+
+footer  {
+	text-align: center;
+	padding: 15px 0;	
+	.small  {
+		font-size: 12px; 
+		font-weight: bold;
+		padding: 5px 0;
+	}
+
+	.mail  {
+		font-size: 10px; 
+	}
+
+}
+
+body {
+	.footerLine  {
+		border: 2px solid #aff66e;
+	}
+}	
+	
+
+.name  {
+	padding: 25px;
+}
+
+.latin  {
+	padding: 25px;	
+}
+
+
+.container  {
+	padding: 0 60px;
+
+	.menu-item {
+		
+
+		li  {
+			display: inline;
+		}
+	}
+
+	.headline  {
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		padding: 50px 0;
+
+	}
+
+	.heading  {
+		text-align: center;
+		font-size: 28px;
+	}
+
+	.subtitle  {
+		font-size: 20px;
+	}
+
+	img  {
+		width: 70px;
+	}
+
+	.welcome  {
+	font-size: 20px;
+	text-align: center;
+
+}   
+
+
+}
+
+#i-nav  {
+	display: none;
+}
+
+.menu-item {
+	list-style: none;
+	height: 25px;
+	text-decoration: none;
+	display: inline;
+	background-color: red;
+
+
+	a  {
+		text-decoration: none;
+		font-size: 20px;
+	}
+}
+
+
+.mobile-menu  {
+	dislay:none;
+}
+
+.onlyMobile  {
+	display:none;
+}
+
+.login  {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+.loginForm  {
+	position: absolute;
+	top: 5x;
+	right: 40px;
+}
+
+.login_btn  {
+	position: absolute;
+	top: 25px;
+	width: 40px;
+	font-size: 10px;
+	height: 15px;
+	right: -25px;
+
+}
+
+.loginUsername  {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+
+.loginPassword  {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ 
+ul {
+    list-style: none;
+}
+
+.menu-icon {
+    display:none;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    color: #3a99d8;
+}
+#toggler {
+    display: none;
+}
+#toggler:checked + .mobile-menu {
+    top: 0;
+}
+

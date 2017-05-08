@@ -1,0 +1,919 @@
+html  {
+	height: 100%;
+}
+
+.wrapper  {
+	display: flex;
+	flex-direction: column;
+	
+	.innerwrapper  {
+		display: flex;
+		box-sizing: border-box;
+		min-height: 100%;
+		flex: 1;
+	}
+}
+
+
+body  {
+	position: relative;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	height: 100%;
+	box-sizing: border-box;
+
+
+	.footerLine  {
+		border: 2px solid $border;
+	}
+}
+
+.title_singlepage  {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+} 
+
+.navbar  {
+	display: inline;
+}
+
+.navbar a  {
+	text-decoration:none;
+}
+
+
+header  {
+	position: relative;
+	background-color: $background;
+
+	.header  {
+		padding-bottom: 10px;
+ 		border-bottom: 3px solid $border;
+  		width: 100%;
+
+
+  			/* Hamburgermenyn*/
+  			#i-nav  {
+				display: none;
+			}
+
+			img  {
+				width: 115px;
+				padding-top: 20px;
+				padding-left: 10px;
+			}
+
+			/* Annas Trädgård*/
+			.title  {
+				position: absolute;
+				top: 10px;
+				left: 120px;
+				font-size: 26px;
+				font-weight: bold;
+				font-family: 'Montserrat', sans-serif;
+				flex: 1;
+				text-align: center;
+				padding-top: 20px;
+
+				a  {
+					text-decoration: none;
+					color: black;
+				}
+			}
+
+
+			/*Allt en trädgårdsamatör behöver veta*/
+			.slogan  {
+				position: absolute;
+				top: 60px;
+				left: 105px;
+				font-size: 14px;
+				text-align: center;
+				padding-left: 30px;
+				color: black;
+			}
+			
+			/*'Knapp' för inloggning */							
+			.login  {
+				position:absolute;
+				top: 5px;
+				right: 110px;
+
+				a  {
+					text-decoration: none;
+				}
+			}
+
+
+			/*'Knapp' för registering */
+			.newUser  {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+
+				a  {
+					color: black;
+					text-decoration: none;
+				}
+			}
+
+
+			/*'Knapp' för min egen sida */	
+			.myPage  {
+				position: absolute;
+				top: 5px;
+				right: 70px;
+
+				a  {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		
+
+			/*'Knapp' för utloggning */
+			.logout  {
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				
+
+				a  {
+					color: black;
+					text-decoration: none;
+				}
+			}
+
+
+
+			/*Sökfunktionen*/
+			.search  {
+				position: absolute;
+				top: 100px;
+				right: 10px;
+				
+				.search-box  {
+					position: relative;
+					width: 80px;
+					height: 20px;
+					top: 14px;
+					right: 15px;
+				}
+
+				.search-btn  {
+					position: relative;
+					top: 15px;
+					right: 0px;
+					height: 20px;
+				}
+			}	
+	}
+}
+
+
+
+/*Footer*/
+footer  {
+	text-align: center;
+	padding: 15px 0;	
+
+	.small  {
+		font-size: 12px; 
+		font-weight: bold;
+		padding: 5px 0;
+	}
+
+	.mail  {
+		font-size: 10px; 
+	}
+}
+
+
+/* Utskrift av de olika växterna, djuren och problemen */
+.singlepage  {
+	display: block;
+	font-size: 18px;
+	position: relative;
+	
+	
+
+	.image  {
+
+		position: relative;
+		width: 100%;
+		height: 300px;
+							
+		.listImage  {
+			position: absolute;
+			width: 600px;
+			
+			padding-bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			img  {
+				
+			}
+		}
+	}
+}		
+
+.singlepage_fakta  {
+	padding: 0 40px;
+		
+	.fontstyle_singlepage  {
+		text-align: center;
+		margin: 0 10px;
+		font-weight: bold;
+		font-size: 24px;
+		padding: 0 30px;
+	}
+
+	.italic_font  {
+		font-style: italic;
+		font-size: 22px;
+		padding-bottom: 60px;
+	}
+
+	.place  {
+		margin: 80px 0;
+	}
+
+	.pruning  {
+		margin: 40px 0;
+	}
+
+	.details  {
+		margin: 80px 0;
+	}
+
+	.food  {
+		margin: 40px 0;
+	}
+
+	.noteName  {
+		text-align: center;
+		padding: 40px 0; 
+	}
+
+	.noteText  {
+		text-align: center;
+		padding-bottom: 70px; 
+	}
+}
+
+.name  {
+	padding: 25px;
+}
+
+.latin  {
+	padding: 25px;	
+}
+
+/* formuär för inläsning av användarens anteckningar*/
+textarea {
+	width: 900px;
+
+	.noteTitle  {
+		padding: 30px 50px;
+	}
+}
+
+
+.container  {
+  	flex: 1;
+  	padding-top: 3px;
+
+  	.headline  {
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		font-family: 'Montserrat', sans-serif;
+		padding: 50px 0;
+
+		.Headline  {
+			padding: 70px 0;
+		}
+
+	}
+
+	.menu-item {
+		text-align: center;
+		list-style: none;
+		height: 25px;
+		text-decoration: none;
+		display: inline;
+				
+
+		li  {
+			display: inline;
+			padding-right: 20px;
+						
+			
+			.active  {
+				border-bottom: 2px solid green;
+				}
+
+			a  {
+				background-color: $background;
+			}
+		}
+	}
+
+	.pagecontent  {
+			
+			
+		p  {
+			text-align: center;
+		}
+			
+		.register-text  {
+			margin: 50px 0;
+			text-align: center;
+		}
+			
+
+		.login-text  {
+			margin: 50px;
+		}
+	}
+
+
+	.search-result  {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		background: red;
+
+		a  {
+			text-decoration: none;
+			background: blue;
+
+			.search-name  {
+			background: green;
+
+			}
+
+			.search-latin  {
+				background: brown;
+			}
+
+		}	
+	}			
+		
+
+	.firstside {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+				
+		.production  {
+			font-size: 24px;
+			position: absolute;
+			top: 380px;
+			color: #fff;
+			padding-left: 30px;
+		}
+
+		.intro  {
+			position: absolute;
+			top: 900px;
+			left: 30px;
+			font-size: 28px;
+			background: $border;
+			background-color: transparent;
+			color: #fff;
+			padding-left: 60px;
+		}
+
+		.picture_firstside  {
+			padding: 0;
+			width: 100%;
+		}
+	}
+}	
+
+
+	.column1 {
+		position: relative;
+	 	max-width: 100%;
+	 	flex: 1;
+	 	
+	 	.grid  {
+	 		flex: 1;
+	 		padding-top: 50px;
+	 		
+	 		.grid-left  {
+	 			display: inline-block;
+	 			width: 33%;
+	 		}
+
+	 		.grid-middle  {
+	 			position: relative;
+	 			display: inline-block;
+	 		 	width: 33%;
+	 			marin-top: 40px;
+
+			 	.loginForm  {
+			 		position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					padding: 50px 0;
+				}
+	 		}
+
+	 		.grid-right  {
+	 			position: relative;
+	 		 	display: inline-block;
+	 			width: 30%;
+	 		}
+	 	}
+	 	
+	 	.textarea  {
+	 		position: relative;
+	 		padding: 100px;
+	 		width: 800px;
+	 		
+
+	 		input {
+	 			margin: 10px;
+	 		}
+
+	 	}
+
+
+		.newUser  {
+			position: relative;
+			top: -310px;
+			text-align: right;
+		}
+
+		.myPage  {
+			position: relative;
+			top: -320px;
+			text-align: right;
+		}
+
+		.register-text  {
+			text-align: center;
+			padding-top: 30px;
+			font-size: 18px;
+		}
+
+
+		
+
+		/*Visning av bloggen*/
+		.blogPost  {
+			margin: 60px 40px;
+			border: 1px solid $border;
+			padding: 20px 40px 20px 40px;
+
+		
+			.heading  {
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+			.date  {
+				padding: 20px 0;
+			}
+
+			.subtitle  {
+				font-weight: bold;
+				font-size: 16px;
+				padding: 5px 0;
+			}
+		}
+
+		/*Registrering av ny användare*/
+		.header  {
+			text-align: center;
+		}
+
+
+		.registerForm  {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 20px;
+			width: 300px;
+						
+
+			.registerstyle  {
+								
+				.inputbox  {
+					width: 50px;
+					
+					input  {
+						margin-bottom: 5px;
+						width: 200px;
+					}
+
+					.inputbox-row  {
+						padding: 5px;
+					}
+				}
+			}
+
+			.register  {
+				text-align: right;
+				margin: 29px 0 0 20px;
+
+			}
+		}
+
+
+		.images  {
+			width: 200px;
+		}
+
+		.view  {
+			width: 200px;
+			text-align: center;
+		}
+
+
+
+
+
+		/* Listan med växter, djur och problem*/
+		.listbox  {
+			display: flex;
+			justify-content: space-around;
+			flex-flow: row wrap;
+
+			.listPage  {
+				position: relative;
+				display: inline-block;
+				border: 1px solid black;
+				height: 300px;
+				width: 200px;
+				padding: 10px 10px 0 10px;
+									
+				a  {
+					text-decoration: none;
+				}
+				
+				
+				.listImage  {
+					position: absolute;
+					width: 200px;
+					height: 200px;
+				}
+
+				.listName  {
+					position: absolute;
+					top: 220px;
+					left: 5px;
+					font-size: 16px;
+					padding-left: 20px;
+				}
+
+				.listLatin  {
+					position: absolute;
+					top: 250px;
+					left: 5px;
+					font-size: 16px;
+					padding-left: 20px;
+					font-style: italic;
+					text-align: center;
+					
+				}
+			}
+		}
+
+
+	/* Användarens personliga sida*/
+
+	.mycolumn {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	  
+		.column2 {
+	  		width: 100%;
+	  		padding:60px;
+
+	  		/* Användarens personliga sida*/
+	  		.welcome  {
+	  			font-size: 24px;
+	  			padding: 40px;
+	  		}
+
+	  		/*Textfältet där användaren kan skriva anteckningar*/
+	  		.textarea  {
+				width: 70%;
+				
+				.noteTitle  {
+					padding-bottom: 20px;
+				}
+			} 	
+
+
+
+	  		/* formuär för inskrivning av användarens anteckningar*/
+
+			form {
+				max-width: 500px;
+				
+				.noteTitle  {
+					padding: 30px 50px;
+				}
+			}
+
+	 	
+	 		.pagecontent  {
+				padding: 10px 10px;
+			}
+		
+			.listpage  {
+				margin:100px;
+			}
+
+			.listName  {
+				 padding: 10px 20px;
+			}
+
+			.listLatin  {
+				padding: 10px 20px;
+			}
+
+
+
+
+			.singlepage  {
+				margin: 140px;
+
+				.title  {
+					text-align: center;
+					font-size: 18px;
+				}
+
+				.image  {
+				
+					.listImage  {
+						width: 240px;
+						text-align: center;
+					}
+				}
+
+				.fontstyle_singlepage  {
+					font-size: 16px;
+					padding: 25px;
+				}
+
+				.italic_font  {
+					font-weight: italic;
+				}
+
+				.place insert::before  {
+						content: "Växtplats";
+					}
+
+				
+				.pruning  {
+					insert::before  {
+						content: "Beskärning";
+					}
+				}
+			}	
+
+		}
+	
+		.column3 {
+	  		width: 33%;
+			padding: 50px;
+			border: 1px solid red;
+				
+	  		.mynotes  {
+				font-size: 16px;
+				padding: 30px 30px;
+				border: 1px solid blue;
+
+				.notes {
+					padding: 40px 0;
+					font-size: 22px;
+					font-weight: bold;
+					background: red;
+				}
+			}
+
+			.yournotes  {
+				font-size: 18px;
+
+				a  {
+					text-decoration: none;
+				}	
+			}
+		}
+	  	
+  	}
+	.column4 {
+  		width: 100%;
+
+  	}
+
+
+
+		.pagecontent  {
+			text-align: center;
+			
+			p  {
+				
+				img  {
+					width: 900px;
+					margin: 90px 0;
+				}
+			}
+		}
+
+		
+
+		.image  {
+			img  {
+				width: 100px;
+			}
+		}
+
+		.pagecontent  {
+			text-align: center;
+			
+
+			.intro  {
+				font-size: 28px;
+				padding: 50px 0;
+			}
+			
+			.production  {
+				font-size: 24px;
+				padding: 50px 0;
+			}
+
+			img  {
+				width: 700px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			
+		}
+
+		
+
+
+		.listPage  {
+			
+			img  {
+				width: 100px;
+			}
+
+			.listImage  {
+				
+			}
+
+			.listName  {
+				padding: 0 40px;
+
+				a  {
+					text-decoration: none;
+				}
+			}
+
+			.listLatin  {
+				a  {
+					text-decoration: none;
+				}
+			}
+		}
+
+		
+		
+
+			.fontstyle_singlepage  {
+				text-align: center;
+				margin: 10px 0;
+				font-weight: bold;
+				font-size: 24px;
+			}
+
+			.italic_font  {
+				font-style: italic;
+				font-size: 22px;
+			}
+
+			.place  {
+				margin: 40px 0;
+			}
+
+			.pruning  {
+				margin: 40px 0;
+			}
+		
+	
+
+	
+  
+		.column3 {
+	  		width: 100%;
+			padding: 60px;
+				
+	  		.mynotes  {
+				font-size: 16px;
+				padding-bottom: 10px;
+
+				.notes {
+					padding: 20px 0;
+					font-size: 20px;
+					font-weight: bold;
+
+					a {
+						color: black;
+					}
+				}
+			}
+
+			.yournotes  {
+				font-size: 16px;
+			}
+		}
+	  	
+  	
+	.column4 {
+  		width: 100%;
+	}
+}
+
+	
+
+	.subtitle  {
+		font-size: 20px;
+	}
+
+	.content  {
+		padding: 10px 0;
+		margin-bottom: 40px;
+	}
+
+	
+
+	.listImage  {
+		width: 70px;
+	}
+
+	
+
+#i-nav  {
+	display: none;
+}
+
+
+.login  {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+
+.loginForm  {
+	top: 15px;
+	right: 5px;	
+}
+
+.loginForm  {
+	position: absolute;
+	top: 15px;
+	right: 5px;
+}
+
+.login_btn  {
+	position: absolute;
+	top: 25px;
+	width: 40px;
+	font-size: 10px;
+	height: 15px;
+	right: -25px;
+}
+
+
+.loginUsername  {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+
+.loginPassword  {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+ul {
+    list-style: none;
+}
+

@@ -1,0 +1,30 @@
+{
+  "name": "annastradgard",
+  "version": "1.0.0",
+  "description": "trädgårds site",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "matchdep": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-postcss": "^0.8.0",
+    "pixrem": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "annaco"
+  },
+  "author": "Anna Conradson Sjöberg",
+  "license": "ISC"
+}
